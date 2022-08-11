@@ -1,0 +1,14 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /spring-pattern-template-method
+
+cloud:
+  aws:
+    access-key: access_key
+    secret-key: access_secret
+    region:
+      static: us-east-1
+    s3:
+      endpoint: http://localhost:4566
+      with-path-style-access-enabled: true
