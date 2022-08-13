@@ -8,10 +8,19 @@
 		{
 			"name": "/reports",
 			"request": {
-				"method": "GET",
+				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"reportType\":\"JSON\",\n    \"startDate\" : \"2013-09-24\",\n    \"endDate\" : \"2022-08-10\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "http://localhost:8080/spring-pattern-template-method/v1/customers",
+					"raw": "http://localhost:8080/spring-pattern-template-method/v1/customers/reports",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -20,7 +29,8 @@
 					"path": [
 						"spring-pattern-template-method",
 						"v1",
-						"customers"
+						"customers",
+						"reports"
 					]
 				}
 			},
